@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="calculator" style="text-align: center; background-color: black; width: 420px; height: 250px; margin-left: 30%; margin-top: 40px;">
+        <div style="color: beige; text-align: center;"><h2 style="padding-top: 15px;">CALCULATOR</h2></div>
+        <input type="text" id="display" style="width: 405px; height: 25px;">
+        
+
+        <div style="text-align: center; background-color: black;">
+            <button onclick="addToInput('1')" style="width: 100px; height: 50px;">1</button>
+            <button onclick="addToInput('2')" style="width: 100px; height: 50px;">2</button>
+            <button onclick="addToInput('3')" style="width: 100px; height: 50px;">3</button>
+            <button onclick="addToInput('4')" style="width: 100px; height: 50px;">4</button>
+        </div>
+        <div style="text-align: center; background-color: black;">
+            <button onclick="addToInput('5')" style="width: 100px; height: 50px;">5</button>
+            <button onclick="addToInput('6')" style="width: 100px; height: 50px;">6</button>
+            <button onclick="addToInput('7')" style="width: 100px; height: 50px;">7</button>
+            <button onclick="addToInput('8')" style="width: 100px; height: 50px;">8</button>
+        </div>
+        <div style="text-align: center; background-color: black;">
+            <button onclick="addToInput('9')" style="width: 100px; height: 50px;">9</button>
+            <button onclick="addToInput('0')" style="width: 100px; height: 50px;">0</button>
+            <button onclick="addToInput('-')" style="width: 100px; height: 50px;">-</button>
+            <button onclick="addToInput('*')" style="width: 100px; height: 50px;">*</button>
+        </div>
+        <div style="text-align: center; background-color: black;">
+            <button onclick="addToInput('+')" style="width: 100px; height: 50px;">+</button>
+            <button onclick="addToInput('/')" style="width: 100px; height: 50px;">/</button>
+            <button onclick="addToInput('.')" style="width: 100px; height: 50px;">.</button>
+            <button onclick="addToInput('%')" style="width: 100px; height: 50px;">%</button>
+        </div>
+        <div style="text-align: center; background-color: black;">
+            <button onclick="reset()" style="width: 150px; height: 50px; background-color: red;">c</button>
+            <BUtton onclick="remove()" id="delbut" style="width: 100px; height: 50px;">Del</BUtton>
+            <button onclick="calculate()" style="width: 150px; height: 50px; background-color: rgba(21, 21, 237, 0.505); color: white;">=</button>
+        </div>
+        <!-- <button onclick="addToInput('C')">C</button> -->
+    </div>
+    <!-- <BUtton onclick="remove()" id="delbut">Del</BUtton> -->
+    <script src="calculator.js"></script>
+</body>
+</html>
